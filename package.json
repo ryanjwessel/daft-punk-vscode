@@ -1,0 +1,29 @@
+{
+    "name": "daft-punk-theme-vscode",
+    "displayName": "daft-punk-vscode",
+    "description": "Daft Punk inspired VSCode theme",
+    "version": "0.0.1",
+    "publisher": "rynjwssl",
+    "scripts": {
+        "prebuild": "rm -rf themes && mkdir themes",
+        "build": "node ./src/writeTheme.js"
+    },
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Daft Punk",
+                "uiTheme": "vs-dark",
+                "path": "./themes/DaftPunk.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "eslint": "^5.6.1"
+    }
+}
